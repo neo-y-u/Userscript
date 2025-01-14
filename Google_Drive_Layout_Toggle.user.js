@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Google Drive Layout Toggle
 // @namespace    https://github.com/neo-y-u/Userscript
-// @updateURL    https://raw.githubusercontent.com/neo-y-u/Userscript/refs/heads/main/Google_Drive_Layout_Toggle.user.js
-// @version      1.3.3
+// @version      1.3.4
 // @description  Toggle Google Drive's list/grid layout using the "Q" key.
 // @author       neo-y-u
 // @match        https://drive.google.com/*
 // @grant        none
+// @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/Google_Drive_Layout_Toggle.user.js
+// @downloadURL  https://github.com/neo-y-u/Userscript/raw/refs/heads/main/Google_Drive_Layout_Toggle.user.js
 // ==/UserScript==
 
 (function () {
