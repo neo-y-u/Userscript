@@ -2,7 +2,7 @@
 // @name         Google Drive Layout Toggle
 // @namespace    https://github.com/neo-y-u/Userscript
 // @updateURL    https://github.com/neo-y-u/Userscript/Google Drive Layout Toggle.user.js
-// @version      1.1
+// @version      1.2
 // @description  Toggle Google Drive's list/grid layout using the "Z" key.
 // @author       neo-y-u
 // @match        https://drive.google.com/*
