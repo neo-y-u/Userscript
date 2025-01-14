@@ -2,8 +2,8 @@
 // @name         Google Drive Layout Toggle
 // @namespace    https://github.com/neo-y-u/Userscript
 // @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/Google%20Drive%20Layout%20Toggle.user.js
-// @version      1.0
-// @description  Toggle Google Drive's list/grid layout using the "V" key.
+// @version      1.1
+// @description  Toggle Google Drive's list/grid layout using the "N" key.
 // @author       neo-y-u
 // @match        https://drive.google.com/*
 // @grant        none
@@ -15,7 +15,7 @@
     // Listen for the "-" key press
     document.addEventListener('keydown', function (event) {
         // Check if the pressed key is "-" and no modifier keys are active
-        if (event.key === 'v' && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        if (event.key === 'n' && !event.ctrlKey && !event.altKey && !event.metaKey) {
             // Prevent default behavior
             event.preventDefault();
 
