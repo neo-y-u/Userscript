@@ -6,8 +6,8 @@
 // @author       neo-y-u
 // @match        https://drive.google.com/*
 // @grant        none
-// @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_Layout_Toggle.user.js
-// @downloadURL  https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_Layout_Toggle.user.js
+// @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_LayoutToggle.user.js
+// @downloadURL  https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_LayoutToggle.user.js
 // ==/UserScript==
 
 (function () {
