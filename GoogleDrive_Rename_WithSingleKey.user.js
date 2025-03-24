@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rename with N Key in Google Drive
 // @namespace    https://github.com/neo-y-u/Userscript
-// @version      1.1.0
+// @version      1.1.1
 // @description  GoogleドライブでNキーを押すとアイテム名の変更が行えるようにするスクリプト
 // @author       neo-y-u
 // @icon	     https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
@@ -14,22 +14,36 @@
 (function() {
     'use strict';
 
-    // ドキュメント全体でキー入力を監視
     document.addEventListener('keydown', function(event) {
-        // 「N」キーが押された場合をチェック（shiftキーなど修飾キーは無視）
-        if (event.key === 'n' && !event.ctrlKey && !event.altKey && !event.shiftKey) {
-            // 「F2」キーのイベントを模倣して送信
-            const f2Event = new KeyboardEvent('keydown', {
-                key: 'F2',
-                code: 'F2',
-                keyCode: 113, // F2のkeyCode
-                which: 113,
-                bubbles: true
-            });
-            document.activeElement.dispatchEvent(f2Event);
+        // 入力欄での「N」キー入力は無視
+        const activeElement = document.activeElement;
+        if (activeElement && (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA' || activeElement.isContentEditable)) {
+            return;
+        }
 
-            // 元の「N」キーの動作を無効化
-            event.preventDefault();
+        // 「N」キーが押された場合をチェック（修飾キーなし）
+        if (event.key === 'n' && !event.ctrlKey && !event.altKey && !event.shiftKey) {
+            event.preventDefault(); // デフォルトの動作を無効化
+
+            // 現在選択されているファイル・フォルダを取得
+            const selectedItem = document.querySelector('[aria-selected="true"]');
+
+            if (selectedItem) {
+                // 選択項目にフォーカスを設定
+                selectedItem.focus();
+
+                // 「F2」キーのイベントを送信
+                const f2Event = new KeyboardEvent('keydown', {
+                    key: 'F2',
+                    code: 'F2',
+                    keyCode: 113,
+                    which: 113,
+                    bubbles: true
+                });
+                selectedItem.dispatchEvent(f2Event);
+            } else {
+                console.warn('No item is selected.');
+            }
         }
     });
 })();
