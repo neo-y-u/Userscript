@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Drive Layout Toggle
 // @namespace    https://github.com/neo-y-u/Userscript
-// @version      1.1.0
+// @version      1.1.1
 // @description  「V」キーを押すことで、Google Drive のリスト表示とグリッド表示を切り替える
 // @author       neo-y-u
 // @icon	     https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
@@ -14,24 +14,28 @@
 (function () {
     'use strict';
 
-    // "V" キーの押下を監視
     document.addEventListener('keydown', function (event) {
-        // // 押されたキーが "V" であり、修飾キーが押されていない場合に処理を実行
-        if (event.key === 'v' && !event.ctrlKey && !event.altKey && !event.metaKey) {
-            // // デフォルトの動作を無効化
-            event.preventDefault();
+        // フォーカスされている要素を取得
+        const activeElement = document.activeElement;
 
-            // 現在アクティブなボタン（リストまたはグリッド）を取得
+        // フォーム入力中の場合は処理をスキップ
+        if (activeElement && (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA' || activeElement.isContentEditable)) {
+            return;
+        }
+
+        // "V" キーの押下を監視（修飾キーなし）
+        if (event.key === 'v' && !event.ctrlKey && !event.altKey && !event.metaKey) {
+            event.preventDefault(); // デフォルトの動作を無効化
+
+            // 現在アクティブなボタンを取得
             const listButton = document.querySelector('button[data-test-id="list-layout-button"]');
             const gridButton = document.querySelector('button[data-test-id="grid-layout-button"]');
 
             if (listButton && gridButton) {
-                // 現在アクティブなボタンを判定
+                // 現在の表示モードを判定して切り替え
                 if (listButton.getAttribute('aria-checked') === 'true') {
-                    // グリッド表示に切り替え
                     gridButton.click();
                 } else {
-                    // リスト表示に切り替え
                     listButton.click();
                 }
             } else {
