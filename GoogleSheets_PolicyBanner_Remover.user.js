@@ -11,7 +11,7 @@
 // @grant        none
 // @updateURL    https://github.com/neo-y-u/Userscript/blob/main/GoogleSheets_PolicyBanner_Remover.js
 // @downloadURL  https://github.com/neo-y-u/Userscript/blob/main/GoogleSheets_PolicyBanner_Remover.js
-
+// @run-at       document-end
 // ==/UserScript==
 
 (function() {
