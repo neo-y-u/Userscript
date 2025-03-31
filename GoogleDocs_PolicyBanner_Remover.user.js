@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  「ポリシーに準拠するには～」バナーを完全に非表示にする
 // @author       neo-y-u
-// @icon	     https://w7.pngwing.com/pngs/990/967/png-transparent-google-file-application-google-docs-document-google-sheets-google-drive-google-plus-angle-rectangle-logo.png
+// @icon         https://w7.pngwing.com/pngs/990/967/png-transparent-google-file-application-google-docs-document-google-sheets-google-drive-google-plus-angle-rectangle-logo.png
 // @match        https://docs.google.com/document/*
 // @match        https://docs.google.com/presentation/*
 // @match        https://docs.google.com/spreadsheets/*
