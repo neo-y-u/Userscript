@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  GoogleドライブでNキーを押すとアイテム名の変更が行えるようにするスクリプト
 // @author       neo-y-u
-// @icon	     https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
+// @icon         https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
 // @match        https://drive.google.com/*
 // @grant        none
 // @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_Rename_WithSingleKey.user.js
