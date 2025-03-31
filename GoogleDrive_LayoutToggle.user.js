@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  「V」キーを押すことで、Google Drive のリスト表示とグリッド表示を切り替える
 // @author       neo-y-u
-// @icon	     https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
+// @icon         https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
 // @match        https://drive.google.com/*
 // @grant        none
 // @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_LayoutToggle.user.js
