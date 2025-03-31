@@ -9,8 +9,8 @@
 // @match        https://docs.google.com/presentation/*
 // @match        https://docs.google.com/spreadsheets/*
 // @grant        none
-// @updateURL    https://github.com/neo-y-u/Userscript/blob/main/GoogleDocs_PolicyBanner_Remover.js
-// @downloadURL  https://github.com/neo-y-u/Userscript/blob/main/GoogleDocs_PolicyBanner_Remover.js
+// @updateURL    https://github.com/neo-y-u/Userscript/blob/main/GoogleDocs_PolicyBanner_Remover.user.js
+// @downloadURL  https://github.com/neo-y-u/Userscript/blob/main/GoogleDocs_PolicyBanner_Remover.user.js
 // @run-at       document-end
 // ==/UserScript==
 
