@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Google Docs_Slides_Sheets_PolicyBanner_Remover
+// @name         GoogleDocs_Slides_Sheets_PolicyBanner_Remover
 // @namespace    https://github.com/neo-y-u/Userscript
 // @version      1.1.1
 // @description  「ポリシーに準拠するには～」バナーを完全に非表示にする
