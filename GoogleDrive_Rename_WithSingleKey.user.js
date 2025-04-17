@@ -7,8 +7,8 @@
 // @icon         https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
 // @match        https://drive.google.com/*
 // @grant        none
-// @updateURL    https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_Rename_WithSingleKey.user.js
-// @downloadURL  https://github.com/neo-y-u/Userscript/raw/refs/heads/main/GoogleDrive_Rename_WithSingleKey.user.js
+// @updateURL    https://raw.githubusercontent.com/neo-y-u/Userscript/main/GoogleDrive_Rename_WithSingleKey.user.js
+// @downloadURL  https://raw.githubusercontent.com/neo-y-u/Userscript/main/GoogleDrive_Rename_WithSingleKey.user.js
 // ==/UserScript==
 
 (function() {
