@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GoogleDocs_Approval_Banner_Remover
 // @namespace    https://github.com/neo-y-u/Userscript
-// @version      1.1.0
+// @version      1.1.1
 // @description  承認バナーを完全に非表示にする
 // @author       neo-y-u
 // @icon         https://w7.pngwing.com/pngs/990/967/png-transparent-google-file-application-google-docs-document-google-sheets-google-drive-google-plus-angle-rectangle-logo.png
