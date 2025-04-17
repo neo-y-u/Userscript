@@ -8,8 +8,8 @@
 // @match        https://docs.google.com/document/*
 // @match        https://docs.google.com/presentation/*
 // @match        https://docs.google.com/spreadsheets/*
-// @updateURL    https://github.com/neo-y-u/Userscript/blob/main/GoogleDocs_Approval_Banner_Remover.user.js
-// @downloadURL  https://github.com/neo-y-u/Userscript/blob/main/GoogleDocs_Approval_Banner_Remover.user.js
+// @updateURL    https://raw.githubusercontent.com//neo-y-u/Userscript/blob/main/GoogleDocs_Approval_Banner_Remover.user.js
+// @downloadURL  https://raw.githubusercontent.com//neo-y-u/Userscript/blob/main/GoogleDocs_Approval_Banner_Remover.user.js
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
