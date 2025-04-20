@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GoogleDrive_Hide_Required-Fields-Missing
 // @namespace    https://github.com/neo-y-u/Userscript
-// @version      1.0.0
+// @version      1.0.1
 // @description  Googleドライブにアップロード時の「未入力の必須項目があります」を非表示にする
 // @author       neo-y-u
 // @icon         https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png
